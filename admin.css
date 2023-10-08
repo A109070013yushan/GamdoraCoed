@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+.left-section {
+    width: 15%;
+    background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/frame_mannager_func.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff; /* 添加背景色以兼容不显示背景的情况 */
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 90vh;
+    margin-top: 42px;
+}
+
+.function-menu h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.function-menu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+.function-menu li {
+    margin-bottom: 10px;
+}
+
+.function-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.function-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.right-section {
+    width: 85%;
+    background-color: #e5c296;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 90vh;
+    float: right;
+    margin-top: 40px;
+}

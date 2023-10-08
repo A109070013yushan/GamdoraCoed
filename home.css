@@ -1,0 +1,168 @@
+.container {
+  display: flex; /* 使用 Flexbox 佈局 */
+}
+
+@font-face {
+  font-family: 'Cubic-11';
+  src: url('Cubic_11_1.013_R.woff') format('woff'),
+       url('Cubic_11_1.013_R.woff2') format('woff2'),
+       url('Cubic_11_1.013_R.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* 設置字體 */
+  font-family: 'Cubic-11';
+}
+
+.left-side {
+  flex: 1;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/frame_index_post.png?raw=true");
+  background-size: 90% auto; /* 調整背景圖片的大小 */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.post {
+  overflow-y: auto;
+  max-height: 450px;
+  margin-left: 100px;
+}
+
+.post img {
+  width: 90%;
+}
+
+.board {
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.center-side {
+  flex: 1;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/index_frame.png?raw=true");
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.center-side img {
+  margin: 40px auto 0;
+  display: block;
+}
+
+.center-side .imagesp {
+  max-width: 70%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-on-image,
+.text-on-image1,
+.additional-image-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-weight: bold;
+  background-color: transparent; /* 移除背景色 */
+  z-index: 1; /* 將文字置於圖片上方 */
+  text-align: center; /* 水平置中 */
+}
+
+.text-on-image {
+  top: 85px;
+  font-size: 26px;
+}
+
+.text-on-image1 {
+  top: 45px;
+  font-size: 26px;
+}
+
+/* 新增的圖片上的文字樣式 */
+.additional-image-text {
+  top: 70px; /* 距離頂部 70px 的位置 */
+  font-size: 14px; /* 字體大小為 14px */
+  writing-mode: vertical-lr; /* 橫式書寫，從上到下 */
+  text-orientation: mixed; /* 讓文字保持垂直並橫向 */
+  transform: rotate(180deg) translateX(-50%); /* 旋轉180度，讓文字變正確方向並水平置中 */
+  width: 1.5em; /* 調整文字寬度，使其適應高度 */
+  position: absolute; /* 相對定位，以便定位文字 */
+  left: 50%; /* 水平置中 */
+}
+
+/* 新增的圖片和連結的容器樣式 */
+.additional-images {
+  display: flex; /* 使用 Flexbox 佈局 */
+  justify-content: center; /* 水平居中對齊 */
+  align-items: center; /* 垂直居中對齊 */
+  margin-top: 20px; /* 與上方元素的間距為 20px */
+}
+
+/* 新增的圖片容器樣式 */
+.additional-image {
+  position: relative; /* 相對定位，以便內部元素定位 */
+  display: inline-block; /* 將圖片容器設為行內元素，使其並排顯示 */
+  text-align: center; /* 文字水平居中對齊 */
+  margin: 0 10px; /* 調整左右間距 */
+}
+
+/* 新增的圖片樣式 */
+.additional-image img {
+  width: 100px; /* 寬度為 100px */
+  height: auto; /* 自動調整高度，保持圖片比例 */
+  display: block; /* 設定圖片為塊級元素，以避免行內元素的間距問題 */
+  margin: 0 auto; /* 水平置中 */
+}
+
+.right-side {
+  flex: 1;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/index_frame.png?raw=true");
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 10px;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 80%;
+  margin-top: 40px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 30%;
+}
+
+.overlay-image2 {
+  position: absolute;
+  bottom: 10%;
+  left: 70%; /* 設定水平居中 */
+  width: 20%;
+}
+
+#changeImage {
+  display: block;
+  margin: 10px auto;
+  margin-left: 10%; /* 向左偏移 */
+}

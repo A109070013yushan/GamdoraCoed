@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>忘記密碼</title>
+  <link rel="stylesheet" href="signin.css"> <!-- 引入外部 CSS 檔案 -->
+  <link rel="stylesheet" href="header.css">
+  <script src="header.js" defer></script>
+  <link rel="icon" href="https://github.com/A109070013yushan/gamdora/blob/main/logo.png?raw=true" type="image/x-icon">
+</head>
+<body style="background-image: url('https://github.com/A109070013yushan/gamdora/blob/main/bg1.png?raw=true'); background-size: cover; background-repeat: no-repeat;">
+  <header class="header">
+    <div class="left-menu">
+      <a href="home.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_home.png?raw=true" alt="主頁" style="width: 28px; height: 25px;">
+      </a>
+      <div class="menu-button">
+        <a href="#" onclick="toggleMenu()">
+          <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_list.png?raw=true" alt="功能列" style="width: 28px; height: 25px;">
+        </a>
+        <div id="menu-items" class="menu-items">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="messages.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_message.png?raw=true" alt="訊息" style="width: 28px; height: 25px;">
+      </a>
+      <a href="gallery.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_illu_book.png?raw=true" alt="圖鑑" style="width: 28px; height: 25px;">
+      </a>
+    </div>
+    <div class="right-menu"> 
+      <div class="search-bar">
+        <form class="search-form" action="search.html" method="GET">
+          <input type="text" name="keyword" placeholder="搜尋貼文...">
+          <button type="submit">
+            <img src="https://github.com/A109070013yushan/gamdora/blob/main/friendlist_search.png?raw=true" alt="搜尋" style="width: 25px; height: 25px;">
+          </button>
+        </form>
+      </div>
+      <a href="signin.html">註冊</a> &nbsp; / &nbsp;
+      <a href="login.html">登入</a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="content">
+      <h1>忘記密碼</h1>
+<form action="/contextPath/login" method="post">
+  <div class="form-row">
+    <label for="username">Email：</label>
+    <input type="text" id="Uid" name="username" required>
+  </div>
+
+  <div class="form-row">
+    <label for="password">驗證碼：</label>
+    <input type="password" id="Password" name="password" required>
+  </div>
+
+<div class="form-row">
+  <button type="submit" class="custom-button">
+    <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_login_confilm_push.png?raw=true" alt="確定">
+    <span>確定</span>
+  </button>
+  <button type="button" class="custom-button">
+    <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_login_confilm_push.png?raw=true" alt="取得驗證碼">
+    <span>取得驗證碼</span>
+  </button>
+</div>
+</form>
+
+    </div>
+  </div>
+  <footer class="footer">
+    <p>世新大學 資訊傳播學系 Gamdora小隊<br>© 2023 Gamdora</p>
+  </footer>
+</body>
+</html>

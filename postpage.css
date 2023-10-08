@@ -1,0 +1,175 @@
+.left-section {
+  align-self: flex-start;
+  width: 25%; /* 占畫面的四分之一寬度 */
+  margin-top: 50px;
+  float: left;
+}
+
+.middle-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.right-section {
+  align-self: flex-start;
+  width: 25%; /* 占畫面的四分之一寬度 */
+  margin-top: 50px;
+  float: right;
+}
+
+.left-section, .middle-section, .right-section {
+  margin-bottom: 0; /* 清除底部的 margin */
+  padding-bottom: 0; /* 清除底部的 padding */
+}
+
+/* 好友列表 */
+.friend-list-container {
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/frame_messgge_friendlist.png?raw=true");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh; /* 使用視窗高度來填滿畫面 */
+  overflow-y: auto; /* 使用auto以適應滾動 */
+  width: 90%;
+  float: left;
+}
+
+/* 貼文區域整體樣式 */
+.post-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1; /* 將發文框置於背景圖片之上 */
+}
+
+.post-box {
+  width: 100%; /* 調整發文框的寬度 */
+  padding: 0; /* 移除原本的內部填充 */
+  display: flex;
+  flex-direction: column;
+  background: none; /* 移除背景颜色 */
+}
+
+/* 好友和追蹤者的貼文 */
+.follower-posts {
+  width: 100%;
+  height: 330px;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/frame_message_friendpost.png?raw=true");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative; /* 新增定位，以調整背景圖片顯示位置 */
+  max-width: 100%; /* 調整最大寬度 */
+}
+
+/* 調整中間的圖片高度 */
+.follower-posts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/frame_message_friendpost.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1; /* 使背景圖片位於下層 */
+}
+
+/* 寵物互動區域樣式 */
+.pet-section {
+  text-align: center;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/pet_block.png?raw=true");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center top; /* 調整背景圖片的位置，將其設置在頂部中間 */
+  position: absolute; /* 使用絕對定位 */
+  top: 70px; /* 距離上邊緣的距離 */
+  right: 0; /* 距離右邊緣的距離 */
+  width: 25%; /* 寬度設置為畫面的四分之一 */
+  height: 100%; /* 調整高度為100%，以填滿父容器 */
+}
+
+/* 寵物按鈕樣式 */
+.pet-buttons {
+  position: absolute; /* 使用絕對定位 */
+  top: 90%; /* 將它們垂直置中 */
+  left: 0; /* 設置到左邊緣 */
+  right: 0; /* 設置到右邊緣 */
+  transform: translateY(-50%); /* 以負的50%位移來垂直置中 */
+}
+
+/* 寵物圖片樣式 */
+.pet-section img {
+  max-width: 50%; /* 確保圖片不會超出寵物互動區域的寬度 */
+  height: auto; /* 讓高度自適應以保持圖片的比例 */
+  display: block; /* 去掉預設的下方間距 */
+  margin: 40% auto 0; /* 水平置中圖片 */
+}
+
+.pet-section::before {
+  content: ""; /* 清除之前的文字内容 */
+  top: 65%; /* 垂直置中 */
+  position: absolute;
+  left: 50%; /* 水平置中 */
+  transform: translateX(-50%); /* 水平置中 */
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/pet_nameblock.png?raw=true");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40%; /* 背景图片的宽度 */
+  height: 40%; /* 背景图片的高度 */
+  z-index: 2; /* 使背景图片位于上层 */
+  pointer-events: none; /* 使背景图片不干扰交互 */
+}
+
+#pet-name {
+  position: absolute;
+  top: 68%; /* 垂直置中 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: black;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 0; /* 移除內部填充 */
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  background-color: transparent; /* 背景透明 */
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle; /* 按钮垂直居中 */
+  max-width: 20%; /* 设置按钮容器的最大宽度 */
+  width: 50%; /* 增加按钮的宽度 */
+  height: 50%; /* 增加按钮的高度 */
+}
+
+.custom-button img {
+  transform: scale(2); /* 通过缩放图像来增加大小 */
+}
+
+/* 清除浮動 */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

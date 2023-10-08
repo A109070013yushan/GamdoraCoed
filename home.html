@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamdora首頁</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <script src="header.js" defer></script>
+  <link rel="stylesheet" href="header.css">
+  <script src="footer.js" defer></script>
+  <link rel="icon" href="https://github.com/A109070013yushan/gamdora/blob/main/logo.png?raw=true" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="left-menu">
+      <a href="home.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_home.png?raw=true" alt="主頁" style="width: 28px; height: 25px;">
+      </a>
+      <div class="menu-button">
+        <a href="#" onclick="toggleMenu()">
+          <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_list.png?raw=true" alt="功能列" style="width: 28px; height: 25px;">
+        </a>
+        <div id="menu-items" class="menu-items">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="messages.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_message.png?raw=true" alt="訊息" style="width: 28px; height: 25px;">
+      </a>
+      <a href="gallery.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_illu_book.png?raw=true" alt="圖鑑" style="width: 28px; height: 25px;">
+      </a>
+    </div>
+    <div class="right-menu"> 
+      <div class="search-bar">
+        <form class="search-form" action="search.html" method="GET">
+          <input type="text" name="keyword" placeholder="搜尋貼文...">
+          <button type="submit">
+            <img src="https://github.com/A109070013yushan/gamdora/blob/main/friendlist_search.png?raw=true" alt="搜尋" style="width: 25px; height: 25px;">
+          </button>
+        </form>
+      </div>
+      <a href="signin.html">註冊</a> &nbsp; / &nbsp;
+      <a href="login.html">登入</a>
+    </div>
+  </header>
+<div class="container" style="margin-top: 100px;">
+  <div class="container">
+    <div class="left-side">
+      <!-- 左側內容放在這裡 -->
+      <h1 class="board">公告欄</h1>
+      <div class="post">
+        <div class="post1">
+          <img src="https://github.com/A109070013yushan/gamdora/blob/main/frame_index_post_content.png?raw=true" alt="post">
+        </div>
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/frame_index_post_content.png?raw=true" alt="post">
+       
+      </div>
+    </div>
+
+<div class="center-side">
+  <!-- 中間內容放在這裡 -->
+  <div class="image-container">
+    <img src="https://github.com/A109070013yushan/gamdora/blob/main/index_per_name.png?raw=true" alt="name">
+    <div class="text-on-image">名字</div>
+  </div>
+  <div class="image-container">
+    <img src="https://github.com/A109070013yushan/gamdora/blob/main/index_per_title.png?raw=true" alt="title">
+    <div class="text-on-image1">稱號</div>
+  </div>
+  <img src="https://github.com/A109070013yushan/gamdora/blob/main/bth_index_add3.png?raw=true" alt="function" class="imagesp" usemap="#image-map">
+  <map name="image-map">
+    <area shape="rect" coords="0%,0%,100%,100%" href=chat.html target="_blank">
+    <area shape="rect" coords="160%,0%,260%,100%" href=messages.html target="_blank">
+    <area shape="rect" coords="320%,0%,420%,100%" href=friend.html target="_blank">
+  </map>
+<div class="additional-images">
+  <div class="additional-image">
+    <a href="personal.html">
+      <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_index_per_messege.png?raw=true" alt="個人">
+      <p class="text-on-image">個人</p>
+    </a>
+  </div>
+  <div class="additional-image">
+    <a href="explore.html">
+      <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_index_explore.png?raw=true" alt="探險">
+      <p class="text-on-image">探險</p>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="right-side">
+  <!-- 右側內容放在這裡 -->
+  <div class="image-container">
+    <img id="mainImage" src="https://github.com/A109070013yushan/gamdora/blob/main/index_per_frame.png?raw=true" alt="character">
+    <img class="overlay-image" src="https://github.com/A109070013yushan/gamdora/blob/main/person1.png?raw=true" alt="overlay">
+    <img class="overlay-image2" src="https://github.com/A109070013yushan/gamdora/blob/main/psrson1_Q.png?raw=true" alt="overlay2">
+  </div>
+  <button id="changeImage">更換角色</button>
+</div>
+  </div>
+ </div> 
+	  <footer class="footer">
+   		 <p>世新大學 資訊傳播學系 Gamdora小隊<br>© 2023 Gamdora</p>
+  	  </footer>
+</body>
+</html>

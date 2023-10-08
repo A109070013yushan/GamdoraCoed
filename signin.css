@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+/* 內容區域樣式 */
+
+.container {
+  background-image: url('https://github.com/A109070013yushan/gamdora/blob/main/frame_login_content.png?raw=true');
+  background-size: 60%; /* 調整背景圖片尺寸 */
+  background-repeat: no-repeat; /* 避免圖片重複 */
+  background-position: center; /* 調整圖片位置為中心 */
+  display: flex;
+  justify-content: center; /* 讓內容置中 */
+  align-items: center;
+  height: 150vh; /* 設定一個適當的高度，以保證內容垂直置中 */
+  box-sizing: border-box; /* 確保內容和 padding 不會超出容器 */
+  margin-top: 60px; /* 適當的數值，使內容遠離 header */
+  margin-bottom: 120px; /* 適當的數值，使內容遠離 footer */
+}
+
+.content {
+  margin: 50px auto;
+  width: 400px;
+  border: none; /* 移除原本的邊框 */
+  padding: 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  color: white; /* 設定字體顏色為白色 */
+  font-weight: bold; /* 設定字體粗細為粗體 */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* 添加黑色的文字邊框 */
+  font-size: 18px; /* 設置文字大小 */
+}
+
+/* 表單元素樣式 */
+label {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.registration-title {
+  font-size: 60px; /* 設定字體大小 */
+  text-align: center; /* 讓標題置中 */
+  margin-bottom: 30px; /* 設定底部間距 */
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-row label {
+  margin-right: 10px;
+}
+
+.input-row input[type="text"],
+.input-row input[type="date"],
+.input-row input[type="email"],
+.input-row input[type="password"] {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+a {
+  color: white; /* 設定字體顏色為白色 */
+  font-weight: bold; /* 設定字體粗細為粗體 */
+  padding: 5px 10px; /* 設定內容的內間距 */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* 添加黑色的文字邊框 */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-button {
+    display: inline-block;
+    padding: 0; /* 移除內部填充 */
+    height: auto; /* 自动适应内容高度 */
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    margin-right: 10px; /* 添加右边距以分隔按钮 */
+    background-color: transparent; /* 背景透明 */
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle; /* 按钮垂直居中 */
+}
+
+.custom-button img {
+    width: 120px; /* 按钮图像的宽度 */
+    height: 60px; /* 按钮图像的高度 */
+    margin-bottom: -50px; /* 图像与文字之间的下边距 */
+}
+
+.custom-button span {
+    display: block;
+    font-size: 20px;
+    white-space: nowrap; /* 防止文字换行 */
+}
+
+.login-link {
+  margin-left: 150px; /* 调整左外边距来分隔按钮和链接 */
+  margin-top: -20px;
+}

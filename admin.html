@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>管理員頁面</title>
+	<script src="header.js" defer></script>
+	<link rel="stylesheet" href="header.css">
+	<script src="footer.js" defer></script>
+	<link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+	<link rel="icon" href="https://github.com/A109070013yushan/gamdora/blob/main/logo.png?raw=true" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="left-menu">
+      <a href="home.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_home.png?raw=true" alt="主頁" style="width: 28px; height: 25px;">
+      </a>
+      <div class="menu-button">
+        <a href="#" onclick="toggleMenu()">
+          <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_list.png?raw=true" alt="功能列" style="width: 28px; height: 25px;">
+        </a>
+        <div id="menu-items" class="menu-items">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="messages.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_message.png?raw=true" alt="訊息" style="width: 28px; height: 25px;">
+      </a>
+      <a href="gallery.html" class="menu-button">
+        <img src="https://github.com/A109070013yushan/gamdora/blob/main/btn_illu_book.png?raw=true" alt="圖鑑" style="width: 28px; height: 25px;">
+      </a>
+    </div>
+    <div class="right-menu"> 
+      <div class="search-bar">
+        <form class="search-form" action="search.html" method="GET">
+          <input type="text" name="keyword" placeholder="搜尋貼文...">
+          <button type="submit">
+            <img src="https://github.com/A109070013yushan/gamdora/blob/main/friendlist_search.png?raw=true" alt="搜尋" style="width: 25px; height: 25px;">
+          </button>
+        </form>
+      </div>
+      <a href="signin.html">註冊</a> &nbsp; / &nbsp;
+      <a href="login.html">登入</a>
+    </div>
+  </header>
+    <div class="left-section">
+        <div class="function-menu">
+            <h2>功能選擇</h2>
+            <ul>
+                <li><a href="#" id="pending-posts" onclick="showContent('content-pending')">待審核內容</a></li>
+                <li><a href="#" id="reported-posts" onclick="showContent('content-reported-posts')">被檢舉文章</a></li>
+                <li><a href="#" id="reported-users" onclick="showContent('content-reported-users')">被檢舉使用者</a></li>
+                <li><a href="#" id="reported-comments" onclick="showContent('content-reported-comments')">被檢舉留言</a></li>
+                <li><a href="#" id="publish-announcement" onclick="showContent('content-publish-announcement')">發布公告</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="content" id="content-pending">
+            <!-- 待審核內容的內容 -->
+            <h2>待審核內容</h2>
+            <!-- 在此添加待審核內容的HTML -->
+        </div>
+        <div class="content" id="content-reported-posts">
+            <!-- 被檢舉文章的內容 -->
+            <h2>被檢舉文章</h2>
+            <!-- 在此添加被檢舉文章的HTML -->
+        </div>
+        <div class="content" id="content-reported-users">
+            <!-- 被檢舉使用者的內容 -->
+            <h2>被檢舉使用者</h2>
+            <!-- 在此添加被檢舉使用者的HTML -->
+        </div>
+        <div class="content" id="content-reported-comments">
+            <!-- 被檢舉留言的內容 -->
+            <h2>被檢舉留言</h2>
+            <!-- 在此添加被檢舉留言的HTML -->
+        </div>
+        <div class="content" id="content-publish-announcement">
+            <!-- 發布公告的內容 -->
+            <h2>發布公告</h2>
+            <!-- 在此添加發布公告的HTML -->
+        </div>
+    </div>
+
+    <!-- 默認顯示第一項 -->
+    <script>
+        showContent('content-pending');
+    </script>
+  <footer class="footer">
+    <p>世新大學 資訊傳播學系 Gamdora小隊<br>© 2023 Gamdora</p>
+  </footer>
+</body>
+</html>

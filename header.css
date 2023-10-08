@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  /* body 樣式 */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("https://github.com/A109070013yushan/gamdora/blob/main/navbar.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  z-index: 1000; /* 調高 z-index 的值 */
+}
+
+.header img {
+  width: 20px; 
+  margin-left: 10px;
+}
+
+.left-menu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-menu a {
+  text-decoration: none;
+  color: white; /* 設定字體顏色為白色 */
+  font-weight: bold; /* 設定字體粗細為粗體 */
+  padding: 5px 10px; /* 設定內容的內間距 */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* 添加黑色的文字邊框 */
+}
+
+.right-menu a:last-child {
+  margin-left: 0px; /* 調整左邊的外邊距 */
+  margin-right: 20px; /* 調整右邊的外邊距 */
+}
+
+.menu-button:first-child {
+  margin-left: 10px;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 3px;
+  text-decoration: none;
+  color: #333;
+}
+
+#menu-items {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 80px;
+  align-items: center; /* 項目置中對齊 */
+}
+
+#menu-items a {
+  display: block; /* 讓項目佔據一行 */
+  margin-bottom: 5px; /* 設定項目之間的間距 */
+  color: black;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.search-form button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer {
+  background-image: url('https://github.com/A109070013yushan/gamdora/blob/main/navbar.png?raw=true');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  width: 100%;
+  height: 80px; /* 設定 footer 的高度 */
+  position: relative; /* 將 position 設定為 relative */
+  text-align: center;
+  margin-top: 0; /* 設定上方的間距 */
+  color: black; /* 設定文字顏色為黑色 */
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 5px;
+  clear: both; /* 清除浮动 */
+}
